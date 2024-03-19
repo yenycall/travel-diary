@@ -1,0 +1,112 @@
+:root[data-theme='dark'] {
+    --background-color: rgb(38, 38, 38);
+    --card-color: rgb(28 25 23);
+    --text-color: rgb(245 245 244);
+}
+
+:root[data-theme='light'] {
+    --background-color: #fff;
+    --card-color: rgb(255 237 213);
+    --text-color: rgb(68 64 60);
+}
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+* {
+    font-family: 'pretendard', sans-serif;
+    margin: 0 auto;
+
+}
+
+.background {
+    background-color: var(--background-color);
+    transition: 0.2s;
+}
+
+a {
+    color:var(--text-color);
+    text-decoration: none;
+    padding: 1em;
+}
+
+a:hover {
+    color: darkseagreen;
+}
+
+body {
+    text-align: center;
+    font-size: 0.3em;
+    color: var(--text-color);
+}
+
+h1{
+    font-size: 3em;
+    padding: 3%;
+}
+
+header, footer {
+    width: 80%;
+    /*background-color: lightblue;*/
+}
+
+header{
+    padding-bottom: 5%;
+}
+
+footer{
+    padding-top: 10%;
+}
+
+@media screen and (min-width: 80rem) {
+    .container {
+        column-width: 10em;
+        display: flex;
+    }
+}
+
+img{
+    max-width: 100%
+}
+
+
+p{
+    padding:2%;
+}
+
+/*.dark-mode {*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*    a{*/
+/*        color:white;*/
+/*    }*/
+/*    a:hover {*/
+/*        color: darkseagreen;*/
+/*    }*/
+/*}*/
+
+button{
+    border: none;
+    opacity: 70%;
+    border-radius: 2em;
+    font-size: 0.5em;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+
+/*h1{*/
+/*    padding: 20px;*/
+/*}*/
+/*header a{*/
+/*    padding : 0px 20px;*/
+/*}*/
+
+/*header {*/
+/*    margin-bottom: 50px;*/
+/*}*/
+
+/*p{*/
+/*    font-size: 14px;*/
+/*}*/
+/*footer{*/
+/*    margin-top: 50px;*/
+/*}*/
